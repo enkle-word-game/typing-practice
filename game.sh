@@ -99,7 +99,7 @@ while true; do
 
     echo
 
-    read -r -p "Copy This: ${BOLD}${BLUE}$random_string${NC}"$'\n' answer
+    read -s -r -p "Copy This: ${BOLD}${BLUE}$random_string${NC}"$'\n' answer
 
     if [[ "$answer" = "$random_string" ]]; then
       echo "${GREEN}Well done!${NC}"
